@@ -2,5 +2,5 @@
 
 for line in `cat cnvd.txt`
 do
-wget -N --no-check-certificate --content-disposition -P cnvd/ $line
+wget --content-disposition -P cnvd/ $line --no-check-certificate
 done
